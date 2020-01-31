@@ -1,0 +1,19 @@
+{
+  "name": "mapbox-gl-style-optimizer",
+  "version": "0.0.1",
+  "description": "Suggests optimizations to Mapbox-GL style files to improve rendering perfs.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c --environment INCLUDE_DEPS",
+    "build:watch": "rollup -c --environment INCLUDE_DEPS -w"
+  },
+  "author": "Benjamin Becquet",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.31.0"
+  }
+}
