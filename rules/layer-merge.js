@@ -45,7 +45,7 @@ function allLayers(layers) {
         R.filter(layerGroup => layerGroup.length > 1),
         R.map(mergeableLayers => ({
             layerId: mergeableLayers[0].id,
-            msg: `${R.pluck('id', mergeableLayers).join(' - ')} can be merged`,
+            msg: `${R.pluck('id', mergeableLayers).join(' - ')} may be merged`,
         }))
     )(layers);
 }
